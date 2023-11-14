@@ -8,20 +8,32 @@ export default function App() {
     isCompleted: false,
   },
   {id: 2,
-    text: "Criar funcionalidade X no sistema",
-    category: "Trabalho",
+    text: "Ir para acade",
+    category: "Pessoal",
     isCompleted: false,
   },
   {id: 3,
-    text: "Criar funcionalidade X no sistema",
-    category: "Trabalho",
+    text: "Estudar React",
+    category: "Faculdade",
     isCompleted: false,
   },
   ])
 
 
 
-  return (
-    <div>App</div>
-  )
+  return <div className="app">
+    <h1>Lista de Tarefas</h1>
+    <div className="todo-list">
+      {todos.map((todo)=> (
+        <div className="todo">
+          <div className="content">
+            <p>{todo.text}</p>
+
+          </div>
+        </div>
+      ))}
+
+    </div>
+
+  </div>
 }
