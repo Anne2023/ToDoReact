@@ -1,0 +1,8 @@
+body{
+  font-family: Arial;
+  background-color: #f4f4f4;
+  padding: 30px;
+  color: #333;
+  background-image: url ('./img/img.jpg');
+  background-size: cover;
+}
